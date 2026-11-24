@@ -1,20 +1,6 @@
-@font-face {
-  font-family: 'IBM Plex mono';
-  src: url('../fonts/IBMPlexMono-Regular.woff') format('woff');
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'IBM Plex mono';
-  src: url('../fonts/IBMPlexMono-Bold.woff') format('woff');
-  font-weight: 700;
-  font-display: swap;
-}
-
 .page {
   color: var(--text-color);
-  font-family: 'IBM Plex mono', monospace;
+  font-family: var(--font-family);
   font-size: 18px;
   line-height: 1.3;
   background-color: var(--page-background);
@@ -22,7 +8,6 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 100vh;
 }
 
 .decorated-zone {
@@ -57,8 +42,8 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
-  height: 100vh;
   min-height: 668px;
+  height: 100vh;
   padding: var(--page-padding);
 }
 
@@ -122,10 +107,9 @@
 .header__title,
 .footer__title {
   color: var(--heading-color);
-  font-family: 'IBM Plex mono', monospace;
   font-size: clamp(7.25rem, 7.011rem + 1.019vw, 7.5rem);
   font-weight: 700;
-  line-height: 0.83;
+  line-height: 0.825;
 }
 
 .header__title {
@@ -144,7 +128,7 @@
 .main {
   display: grid;
   gap: 50px;
-  padding: 16px var(--page-padding); /* Исправлено на 16px по макету */
+  padding: 40px var(--page-padding);
 }
 
 .section {
@@ -225,8 +209,8 @@
 .footer {
   display: grid;
   place-items: center;
-  height: 100vh;
   min-height: 668px;
+  height: 100vh;
   padding: var(--page-padding);
 }
 
@@ -256,7 +240,7 @@
 
   .main {
     gap: 80px;
-    padding-block: 80px; /* Исправлено на 80px по макету */
+    padding-block: 60px;
   }
 
   .section {
