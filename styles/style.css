@@ -8,6 +8,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 .decorated-zone {
@@ -50,12 +51,12 @@
 .header__rec {
   position: absolute;
   top: var(--page-padding);
-  right: calc(var(--page-padding) + 9px);
   display: var(--rec-display);
   align-items: center;
   gap: 10px;
   color: var(--accent-color);
   line-height: 25px;
+  right: var(--page-padding);
 }
 
 .header__rec::after {
@@ -217,13 +218,16 @@
 .footer__title {
   text-shadow: 2px 2px 0 var(--heading-shadow);
 }
-
+@media (width < 768px) {
+  .header__rec {
+    display: none;
+  }
+}
 @media (width >= 768px) {
   .header,
   .footer {
     min-height: 1024px;
   }
-
   .header__title,
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -252,7 +256,7 @@
   }
 
   .distractions .section__title {
-    width: calc((100% - 40px) / 3);
+    width: 100%;
   }
 
   .gallery,
