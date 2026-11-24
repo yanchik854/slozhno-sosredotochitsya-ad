@@ -57,8 +57,8 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
-  min-height: 668px;
   height: 100vh;
+  min-height: 668px;
   padding: var(--page-padding);
 }
 
@@ -144,7 +144,7 @@
 .main {
   display: grid;
   gap: 50px;
-  padding: 16px var(--page-padding);
+  padding: 16px var(--page-padding); /* Исправлено на 16px по макету */
 }
 
 .section {
@@ -225,8 +225,8 @@
 .footer {
   display: grid;
   place-items: center;
-  min-height: 668px;
   height: 100vh;
+  min-height: 668px;
   padding: var(--page-padding);
 }
 
@@ -256,7 +256,7 @@
 
   .main {
     gap: 80px;
-    padding-block: 60px;
+    padding-block: 80px; /* Исправлено на 80px по макету */
   }
 
   .section {
