@@ -57,7 +57,7 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
-   min-height: 668px;
+  min-height: 668px;
   height: 100vh;
   padding: var(--page-padding);
 }
@@ -234,9 +234,11 @@
 }
 
 @media (width >= 768px) {
-   .header, .footer {
+  .header,
+  .footer {
     min-height: 1024px;
   }
+
   .header__title,
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -292,9 +294,11 @@
 }
 
 @media (width >= 1024px) {
-   .header, .footer {
+  .header,
+  .footer {
     min-height: 768px;
   }
+
   .header__theme-menu {
     align-self: start;
     justify-self: center;
