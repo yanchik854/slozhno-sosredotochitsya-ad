@@ -31,3 +31,9 @@
     color-scheme: dark;
   }
 }
+
+@media (width >= 768px) {
+  :root {
+    --page-padding: 20px;
+  }
+}
