@@ -13,3 +13,19 @@
   color-scheme: light;
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --page-background: #fff1f7;
+    --background-image: url('../images/cover-image-light.png');
+    --accent-color: #ff8dcb;
+    --heading-color: #ffc2e6;
+    --text-color: #353430;
+    --section-title-color: #353430;
+    --decor-text-color: #353430;
+    --menu-color: #353430;
+    --menu-hover-color: rgb(50 49 45 / 40%);
+    --heading-shadow: #ff8dcb;
+    --rec-display: none;
+    color-scheme: light;
+  }
+}

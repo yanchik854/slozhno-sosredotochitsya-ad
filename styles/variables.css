@@ -1,25 +1,33 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
 :root {
   --font-family: 'IBM Plex mono', monospace;
-  --page-background: #000028;
-  --background-image: url('../images/cover-image-dark.png');
-  --accent-color: #ff0070;
-  --heading-color: #db00ff;
-  --text-color: #f1b2ce;
-  --section-title-color: #ff0070;
-  --decor-text-color: #000028;
-  --menu-color: #ff0070;
-  --menu-hover-color: rgb(255 0 112 / 40%);
-  --heading-shadow: #ff0070;
-  --rec-display: flex;
+  --page-background: #fff1f7;
+  --background-image: url('../images/cover-image-light.png');
+  --accent-color: #ff8dcb;
+  --heading-color: #ffc2e6;
+  --text-color: #353430;
+  --section-title-color: #353430;
+  --decor-text-color: #353430;
+  --menu-color: #353430;
+  --menu-hover-color: rgb(50 49 45 / 40%);
+  --heading-shadow: #ff8dcb;
+  --rec-display: none;
   --page-padding: 10px;
+  color-scheme: light;
 }
 
-@media (width >= 768px) {
+@media (prefers-color-scheme: dark) {
   :root {
-    --page-padding: 20px;
+    --page-background: #000028;
+    --background-image: url('../images/cover-image-dark.png');
+    --accent-color: #ff0070;
+    --heading-color: #db00ff;
+    --text-color: #f1b2ce;
+    --section-title-color: #ff0070;
+    --decor-text-color: #000028;
+    --menu-color: #ff0070;
+    --menu-hover-color: rgb(255 0 112 / 40%);
+    --heading-shadow: #ff0070;
+    --rec-display: flex;
+    color-scheme: dark;
   }
 }
