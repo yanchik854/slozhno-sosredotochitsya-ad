@@ -251,13 +251,9 @@
     grid-template-columns: 1fr 2fr;
   }
 
-  .distractions {
-    grid-template-columns: 1fr;
-  }
-
-  .distractions .section__title {
-    width: 100%;
-  }
+  .distractions .section__articles {
+  grid-column: 1 / -1;
+}
 
   .gallery,
   .gallery__images {
@@ -308,12 +304,10 @@
 
   .distractions .section__title {
     grid-column: 1;
-    width: auto;
   }
 
   .distractions .section__articles {
-    grid-column: 1 / -1;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: start;
+   grid-template-columns: repeat(3, 1fr);
+   align-items: start;
   }
 }
